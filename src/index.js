@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import clipboard from './clipboard';
 
 const ReactClipBoard = React.createClass({

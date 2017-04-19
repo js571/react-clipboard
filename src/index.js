@@ -34,7 +34,7 @@ const ReactClipBoard = React.createClass({
     } = this.props;
     const elem = React.Children.only(children);
 
-    return React.cloneElement(elem, {...props, onClick: this.onClick.bind(this)});
+    return React.cloneElement(elem, {...props, onClick: this.onClick});
   }
 });
 

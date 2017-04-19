@@ -12,8 +12,8 @@ const ReactClipBoard = React.createClass({
 
   onClick(event) {
     const {text, onCopy, onFail} = this.props;
-    clipboard.copy(text, function(){
-      onCopy && onCopy();
+    clipboard.copy(text, function(str){
+      onCopy && onCopy(str);
     }, function () {
       onFail && onFail();
     });
